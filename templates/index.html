@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Home</title>
+</head>
+<body>
+    <h1>Home</h1>
+    <img src="./plot.png" alt="image"> 
+    <script>
+        var img = document.querySelector('img');
+        img.addEventListener('mouseover', function() {
+            //start zoom effect
+            img.style.transform = 'scale(1.1)';
+
+        });
+        img.addEventListener('mouseout', function() {
+            //end zoom effect
+            img.style.transform = 'scale(1)';
+        });
+    </script>
+</body>
+</html>
